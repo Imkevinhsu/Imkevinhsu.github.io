@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>HTML</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="Introduction.html">Introduction</a></li>
+      <li><a href="school.html">School</a></li>
+      <li><a href="candid_photo.html">Candid_photo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>School</h1>
+    <p>國立台灣工業技術學院成立於民國六十三年八月一日，為我國第一所技術職業教育高等學府。建校之目的，在因應我國經濟與工業迅速發展之需求，以培養高級工程技術及管理人才為目標，同時建立完整之技術職業教育體系。本校校地約48公頃，校本部位於臺北市基隆路四段四十三號，現有大學部學生5,600位，研究生4,900位，專任教師420位。<br>
+
+　　本校自民國八十六年改名為國立台灣科技大學，目前設有工程、電資、管理、設計、人文社會、應用科技等六個學院，分別有機械工程、材料科學與工程、營建工程、化學工程、電子工程、電機工程、資訊工程、工業管理、企業管理、資訊管理、建築、工商業設計、應用外語及全校不分系等系及自動化及控制研究所、光電工程研究所、管理研究所、財務金融研究所、科技管理研究所、數位學習與教育研究所、應用科技研究所、醫學工程研究所、專利研究所及色彩與照明科技研究所等獨立研究所，此外尚有人文社會學科負責人文、社會、法律、音樂、環保類等課程之教，以及師資培育中心專以培養學生未來擔任中等學校工、商、管理、設計等科之合格教師，合計共有二十四個獨立系所、師資培育中心及人文社會學科等教學單位，招收博士班、碩士班及大學部學生。<br>
+
+　　</p>
+  </article>
+</section>
+
+<footer>
+  <p>Ending</p>
+</footer>
+
+</body>
+</html>
