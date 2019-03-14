@@ -32,9 +32,15 @@ nav {
 }
 
 /* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
+nav ol {
+  background: #55FF04;
+  padding: 20px;
+}
+
+nav ol li{
+  background: #B4F197;
+  padding: 5px;
+  margin-left: 35px;
 }
 
 article {
@@ -60,6 +66,29 @@ footer {
   color: white;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
   nav, article {
@@ -67,6 +96,7 @@ footer {
     height: auto;
   }
 }
+
 </style>
 </head>
 <body>
@@ -79,17 +109,28 @@ footer {
 
 <section>
   <nav>
-    <ul>
+    <ol>
       <li><a href="Introduction.html">Introduction</a></li>
       <li><a href="school.html">School</a></li>
       <li><a href="candid_photo.html">Candid_photo</a></li>
-    </ul>
+    </ol>
   </nav>
   
   <article>
     <h1>Candid_photo</h1>
-    <img src="https://Imkevinhsu.github.io/img/candid_photo.jpg" alt="Girl in a jacket" style="width:130px;height:200px;">
-       <img src="https://Imkevinhsu.github.io/img/aaa.jpg" alt="Girl in a jacket" style="width:270px;height:200px;">
+  <div class="dropdown">
+  <img src="https://Imkevinhsu.github.io/img/candid_photo.jpg" alt="Cinque Terre" width="180" height="200">
+  <div class="dropdown-content">
+  <img src="https://Imkevinhsu.github.io/img/candid_photo.jpg" alt="Cinque Terre" width="270" height="300">
+   <div class="desc">Beautiful Cinque Terre</div>
+</div>
+      <div class="dropdown">
+  <img src="https://Imkevinhsu.github.io/img/aaa.jpg" alt="Cinque Terre" width="270" height="200">
+  <div class="dropdown-content">
+  <img src="https://Imkevinhsu.github.io/img/aaa.jpg" alt="Cinque Terre" width="410" height="300">
+   <div class="desc">Beautiful Cinque Terre</div>
+  </div>
+</div>
   </article>
 </section>
 
